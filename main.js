@@ -1,9 +1,10 @@
-
 fetch('http://localhost:3000/cafes')
     .then(response => response.json())
     .then(function (cafes) {
-       renderCafes(cafes);
+       //renderCafes(cafes);
     });
+
+/*
 
 
 function renderCafes(cafes) {
@@ -26,5 +27,7 @@ function renderCafes(cafes) {
     }
 
 }
+
+ */
 
 
