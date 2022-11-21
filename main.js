@@ -1,8 +1,9 @@
 
+
 fetch('http://localhost:3000/cafes')
     .then(response => response.json())
     .then(function (cafes) {
-       renderCafes(cafes);
+      renderCafes(cafes);
     });
 
 
@@ -20,11 +21,10 @@ function renderCafes(cafes) {
             <p class="location">${cafe.location}</p>
             <p class="wifi">${cafe.wifi}</p>
             <p class="ratings">${cafe.ratings}</p>
-    
+
         `;
         ul.appendChild(li);
     }
 
 }
-
 
