@@ -5,6 +5,8 @@ fetch('http://localhost:3000/cafes')
       renderCafes(cafes);
     });
 
+
+
 function renderCafes(cafes) {
     console.log(cafes);
     const ul = document.querySelector('ul#cafes');
