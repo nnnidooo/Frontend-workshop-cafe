@@ -23,6 +23,7 @@ function renderCafes(cafes) {
             <p class="ratings">Ratings out of 5 stars ⭐ ️${cafe.ratings}</p>
         `;
         ul.appendChild(li);
+
     }
 
 }
