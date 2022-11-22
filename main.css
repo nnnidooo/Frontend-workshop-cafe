@@ -1,5 +1,25 @@
-.price {
+body {
+    font-family: 'Open Sans', sans-serif;
+
+}
+
+.price{
     color: green;
+}
+
+.name {
+    font-family: "Arial Black";
+}
+
+h1 {
+    width:500px;
+    margin: 0 auto;
+    padding-top: 100px;
+    text-align: center;
+    color: white;
+    font-size: xxx-large;
+    font-family: "Arial Black";
+    text-shadow: 2px 2px 8px black;
 }
 
 ul {
@@ -9,14 +29,29 @@ ul {
 }
 
 li {
-    border: 1px solid black;
+    border: 2px solid black;
     margin-bottom: 12px;
+    display: inline-block;
+    margin-right: 10px;
+    padding: 10px;
+
 }
 
-img {
-    justify-content: center;
-    display: flex;
-    height: 450px;
+#header-background {
+    width: 100%;
+    height: 400px;
+    background-image: url('https://www.flytap.com/-/media/Flytap/new-tap-pages/destinations/europe/denmark/copenhagen/destinations-copenhagen-banner-mobile-1024x553.jpg');
+    margin-bottom: 50px;
+    box-shadow: 0 0 100px 2px;
+    background-color: dimgrey;
+    background-blend-mode: multiply;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+button {
+    margin-bottom: 10px;
 
 }
 
