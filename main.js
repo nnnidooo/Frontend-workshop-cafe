@@ -20,7 +20,7 @@ function renderCafes(cafes) {
             <p class="price"> Price range:  ${cafe.price_range}</p>
             <p class="location">${cafe.location}</p>
             <p class="wifi">Is there wifi at the cafe?  ${cafe.wifi}</p>
-            <p class="ratings">Ratings out of 5 stars ⭐ ️${cafe.ratings}</p>
+            <p class="ratings">Ratings out of 5 stars ⭐  ️${cafe.ratings}</p>
         `;
         ul.appendChild(li);
 
