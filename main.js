@@ -19,7 +19,7 @@ function renderCafes(cafes) {
         li.innerHTML = `
             <p class="name">${cafe.cafe_name}</p>
             <p class="price"> Price range:  ${cafe.price_range}</p>
-            <p class="location">Location: ${cafe.location}</p>
+            <p class="location">Location: ${cafe.cafe_location}</p>
             <p class="wifi">Available Wifi:  ${cafe.wifi}</p>
             <p class="ratings">⭐ Rating: ️${cafe.ratings}/5</p>
         `;
@@ -44,10 +44,10 @@ function registerEvents(cafes) {
     const filteredCafes = [];
         for (let i = 0; i < cafes.length; i++) {
             const cafe = cafes[i];
-            console.log(cafe.location);
+            console.log(cafe.cafe_location);
             console.log(location);
-            console.log(cafe.location === location);
-            if (cafe.location === location) {
+            console.log(cafe.cafe_location === location);
+            if (cafe.cafe_location === location) {
                 filteredCafes.push(cafe); //.push smider det ind i dit nye array
             }
         }
