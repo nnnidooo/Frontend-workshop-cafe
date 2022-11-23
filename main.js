@@ -60,5 +60,10 @@ function registerEvents(cafes) {
 
 
 
+
+
+
+
+
 //vi vil fange værdien i felterne (det brugeren har skrevet) dette gør vi ved .value
 // vi skal have sendt dette request til backend

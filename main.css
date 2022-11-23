@@ -4,11 +4,12 @@ body {
 }
 
 .price{
-    color: green;
+    color: darkgreen;
 }
 
 .name {
-    font-family: Arial;
+    font-style: oblique;
+    
 }
 
 h1 {
@@ -18,14 +19,13 @@ h1 {
     text-align: center;
     color: white;
     font-size: xxx-large;
-    font-family: Arial;
     text-shadow: 2px 2px 8px black;
 }
 
 ul {
     list-style-type: none; /* Remove bullets */
     padding: 10px; /* Remove padding */
-    margin: 0px; /* Remove margins */
+    margin: 0; /* Remove margins */
     width: 100%;
     height: 400px;
 }
@@ -36,7 +36,7 @@ li {
     display: inline-grid;
     margin-right: 10px;
     padding: 10px;
-    background-image: url("https://img.freepik.com/free-vector/hand-painted-watercolor-pastel-sky-background_23-2148902771.jpg?w=2000"[0]);
+    background-image: url("https://img2.exportersindia.com/product_images/bc-small/2020/7/7014895/jk-brown-marble-slab-1594894419-5522243.jpeg");
 
 }
 
@@ -55,12 +55,14 @@ li {
 
 button {
     margin-bottom: 10px;
-    font-family: Arial;
     color: darkblue;
+    box-shadow: black;
+    border-radius: initial;
 
 }
 
+
 .filter:hover{
-    color: blue;
+    color: darkblue;
     font-size: medium;
 }
