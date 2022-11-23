@@ -1,6 +1,6 @@
 body {
     font-family: 'Open Sans', sans-serif;
-
+    background-image: url("https://media.istockphoto.com/id/1332612598/photo/brown-watercolour-background-watercolour-painting-soft-textured-on-wet-white-paper-background.jpg?b=1&s=170667a&w=0&k=20&c=L5EFzzs5KCNjANzBZuxnYEHdVMVnsPhicQqvzfwCGos=");
 }
 
 .price{
@@ -8,8 +8,7 @@ body {
 }
 
 .name {
-    font-style: oblique;
-    
+    font-family: "Arial Black";
 }
 
 h1 {
@@ -22,22 +21,32 @@ h1 {
     text-shadow: 2px 2px 8px black;
 }
 
+h2 {
+    text-align: center;
+    color: black;
+    font-family: "Arial Black";
+    text-shadow: 2px 2px 8px white;
+
+}
+
 ul {
     list-style-type: none; /* Remove bullets */
-    padding: 10px; /* Remove padding */
+     /* Remove padding */
     margin: 0; /* Remove margins */
     width: 100%;
     height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 li {
     border: 2px solid black;
     margin-bottom: 12px;
     display: inline-grid;
-    margin-right: 10px;
+    margin-right: 15px;
     padding: 10px;
-    background-image: url("https://img2.exportersindia.com/product_images/bc-small/2020/7/7014895/jk-brown-marble-slab-1594894419-5522243.jpeg");
-
+    background-color: white;
 }
 
 #header-background {
@@ -53,16 +62,17 @@ li {
     background-size: cover;
 }
 
-button {
-    margin-bottom: 10px;
-    color: darkblue;
+#button {
+    margin-left: 215px;
     box-shadow: black;
     border-radius: initial;
-
 }
 
 
 .filter:hover{
-    color: darkblue;
     font-size: medium;
+}
+
+footer {
+    font-family: cursive;
 }
