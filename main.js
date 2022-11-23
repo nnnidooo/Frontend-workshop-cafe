@@ -7,6 +7,7 @@ fetch('https://cafes-api-repo.onrender.com/cafes')
 
     });
 
+
 function renderCafes(cafes) {
     console.log(cafes);
     const ul = document.querySelector('ul#cafes');
