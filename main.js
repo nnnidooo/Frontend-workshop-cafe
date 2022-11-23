@@ -1,5 +1,5 @@
 
-fetch('http://localhost:3000/cafes')
+fetch('https://cafes-api-repo.onrender.com/cafes')
     .then(response => response.json())
     .then(function (cafes) {
       renderCafes(cafes);
