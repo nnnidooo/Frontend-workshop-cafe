@@ -4,16 +4,17 @@ fetch('http://localhost:3000/cafes')
     .then(function (cafes) {
       renderCafes(cafes);
       registerEvents(cafes);
+
     });
 
 function renderCafes(cafes) {
     console.log(cafes);
     const ul = document.querySelector('ul#cafes');
     ul.innerHTML = "";
-    console.log(ul);
+        console.log(ul);
     for (let i = 0; i < cafes.length; i++) {
         const cafe = cafes[i];
-        console.log(cafe);
+            console.log(cafe);
         const li = document.createElement('li');
         li.innerHTML = `
             <p class="name">${cafe.cafe_name}</p>
@@ -27,31 +28,28 @@ function renderCafes(cafes) {
 }
 
 function registerEvents(cafes) {
-    console.log(cafes);
+        console.log(cafes);
     //1: attach eventlistener
     const button = document.querySelector('button.filter')
-    console.log(button);
+        console.log(button);
     button.addEventListener('click', function () {
         console.log('button clicked');
         //2: get filter value
-        const inputElement = document.querySelector('input')
+    const inputElement = document.querySelector('input')
         console.log(inputElement);
         console.log(inputElement.value); //logger værdien ud som man har skrevet i input-felten
         //3: filter list
-        const location = inputElement.value;
+    const location = inputElement.value;
         console.log(location);
-        const filteredCafes = [];
+    const filteredCafes = [];
         for (let i = 0; i < cafes.length; i++) {
             const cafe = cafes[i];
-
             console.log(cafe.location);
             console.log(location);
             console.log(cafe.location === location);
-
             if (cafe.location === location) {
                 filteredCafes.push(cafe); //.push smider det ind i dit nye array
             }
-
         }
             console.log(filteredCafes);
 
@@ -59,3 +57,8 @@ function registerEvents(cafes) {
             renderCafes(filteredCafes)
         })
 }
+
+
+
+//vi vil fange værdien i felterne (det brugeren har skrevet) dette gør vi ved .value
+// vi skal have sendt dette request til backend
